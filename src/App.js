@@ -7,6 +7,7 @@ function App() {
 <Header />
 <div className="app__body">
       <Sidebar />
+
 </div>
     </AppWrapper >
   );
@@ -17,4 +18,3 @@ const AppWrapper = styled.div`
 `
 export default App;
 
-// header branch 
