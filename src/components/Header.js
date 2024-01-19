@@ -118,6 +118,7 @@ const HeaderCenter = styled.div`
                 color: #2e81f4;
             }
 } `
+
 const HeaderRight = styled.div`
         display: flex;
         .header__info {
