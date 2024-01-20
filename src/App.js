@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Sidebar from './components/Sidebar'
 import Feed from './components/Feed'
 import Header from './components/Header'
+import Widget from './components/Widget'
 function App() {
   return (
     <AppWrapper>
@@ -11,6 +12,7 @@ function App() {
 <div className="app__body">
       <Sidebar />
       <Feed />
+      <Widget/>
 </div>
     </AppWrapper >
   );
