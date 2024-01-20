@@ -16,4 +16,4 @@ const FeedWrapper = styled.div`
     flex-direction: column;
     align-items: center;
 `
-export default Feed
+export default Feed;
