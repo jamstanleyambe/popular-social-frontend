@@ -19,8 +19,4 @@ const AppWrapper = styled.div`
     display: flex;
   }
 `
-
-
 export default App;
-
-// header branch 
