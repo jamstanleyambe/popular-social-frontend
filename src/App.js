@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Sidebar from './components/Sidebar'
+import Feed from './components/Feed'
 import Header from './components/Header'
 function App() {
   return (
@@ -7,14 +8,23 @@ function App() {
 <Header />
 <div className="app__body">
       <Sidebar />
+<<<<<<< HEAD
 
+||||||| cf67295
+=======
+      <Feed />
+>>>>>>> feed
 </div>
     </AppWrapper >
   );
 }
 const AppWrapper = styled.div`
   background-color: #f1f2f5;
-  app__body: display: flex;
+  .app__body {
+    display: flex;
+  }
 `
+
+
 export default App;
 
