@@ -16,11 +16,4 @@ const FeedWrapper = styled.div`
     flex-direction: column;
     align-items: center;
 `
-<<<<<<< HEAD
-
-export default Feed
-||||||| 26fdeff
-export default Feed
-=======
 export default Feed;
->>>>>>> googleauthen
