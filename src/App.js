@@ -7,8 +7,11 @@ import Header from './components/Header'
 import Widget from './components/Widget'
 import { useState } from 'react'
 import Login from './components/Login'
+import { useStateValue } from './StateProvider';
 function App() {
-  const [user, setUser] = useState(null)
+
+  const [{ user }, dispatch] = useStateValue()
+
   return (
     <AppWrapper>
 

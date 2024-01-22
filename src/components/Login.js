@@ -4,6 +4,9 @@ import Button from '@mui/material/Button';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
+import { useStateValue } from '../StateProvider'
+import { actionTypes } from '../Reducer'
+
 const firebaseConfig = {
     apiKey: "AIzaSyB0Ep-dPj7zwIXOVA8RR2Wcv9pC1Dr9ulg",
     authDomain: "popular-social-frontend-524d5.firebaseapp.com",
@@ -17,10 +20,18 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const Login = () => {
+    const [{}, dispatch] = useStateValue()
+
+
     const signIn = () => {
         const auth = getAuth(app);
         signInWithPopup(auth, new GoogleAuthProvider())
-            .then(result => console.log(result))
+            .then(result => { console.log(result) 
+                dispatch({
+                type: actionTypes.SET_USER,
+                user: result.user
+            })
+        })
             .catch(error => alert(error.message));
     };
 
