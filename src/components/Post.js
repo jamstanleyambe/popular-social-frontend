@@ -22,7 +22,7 @@ const Post = ({ profilePic, message, timestamp, imgName, username }) => {
       </PostBottom>
       {imgName ? (
         <div className="post__image">
-          <img src={imgName} alt="Posts" />
+          <img src={` https://popular-social-backend. herokuapp.com/images/single?name=${imgName}`} alt="Posts" />
         </div>
       ) : (
         console.log("DEBUG >>> no image here")
